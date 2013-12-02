@@ -23,7 +23,7 @@ function extract_feed($url) {
 	$feed = array(
 		'id' => $url,
 		'title' => $xpath->evaluate('string(head/title)'),
-		'updated' => new DateTime,
+		'updated' => time(),
 		'entry' => array(),
 	);
 
